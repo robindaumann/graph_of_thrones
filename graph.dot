@@ -1,0 +1,23 @@
+strict graph {
+    "Superman"
+    "Cheetah"
+    "Green Lantern"
+    "Wonder Woman"
+    "Lex Luthor"
+    "Sinestro"
+    "Superman" -- "Wonder Woman" [label="++"; weight=1]
+    "Cheetah" -- "Superman" [label="--"; weight=1]
+    "Cheetah" -- "Green Lantern" [label="--"; weight=1]
+    "Cheetah" -- "Wonder Woman" [label="--"; weight=1]
+    "Cheetah" -- "Lex Luthor" [label="++"; weight=1]
+    "Cheetah" -- "Sinestro" [label="++"; weight=1]
+    "Green Lantern" -- "Superman" [label="++"; weight=1]
+    "Green Lantern" -- "Wonder Woman" [label="++"; weight=1]
+    "Green Lantern" -- "Lex Luthor" [label="--"; weight=1]
+    "Green Lantern" -- "Sinestro" [label="--"; weight=1]
+    "Lex Luthor" -- "Superman" [label="--"; weight=1]
+    "Lex Luthor" -- "Wonder Woman" [label="--"; weight=1]
+    "Lex Luthor" -- "Sinestro" [label="++"; weight=1]
+    "Sinestro" -- "Superman" [label="--"; weight=1]
+    "Sinestro" -- "Wonder Woman" [label="--"; weight=1]
+}
